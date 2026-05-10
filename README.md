@@ -1,4 +1,4 @@
-B.Sc.(Engg.) 2nd Year 2nd Semester  
+B.Sc.(Engg.) 2nd Year 2nd Semester 2024  
 Web Technology Laboratory  
 ICT-2204  
 Group A:  
