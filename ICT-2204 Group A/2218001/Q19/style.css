@@ -1,0 +1,326 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#f5f7fa;
+  color:#222;
+}
+
+/* Navbar */
+
+header{
+  position:sticky;
+  top:0;
+}
+
+nav{
+  background:#111;
+  padding:15px 8%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h2{
+  color:white;
+  height: 10px;
+  width: 10px;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin-left:20px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  transition:.3s;
+}
+
+nav ul li a:hover{
+  color:#00e1ff;
+}
+
+/* Hero */
+
+.hero{
+  height:100vh;
+
+  background:
+  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url(icti.jpg);
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+}
+
+.hero h1{
+  font-size:50px;
+  margin:10px 0;
+
+  animation:up 2s;
+}
+
+.hero h3{
+  animation:fade 2s;
+}
+
+.typing{
+  overflow:hidden;
+  white-space:nowrap;
+  border-right:2px solid white;
+
+  width:0;
+
+  animation:type 4s steps(30,end) forwards;
+}
+
+.btn{
+  margin-top:20px;
+  padding:10px 25px;
+
+  background:#00e1ff;
+  color:black;
+
+  text-decoration:none;
+  border-radius:30px;
+
+  transition:.4s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 15px #00e1ff;
+}
+
+/* Section */
+
+section{
+  padding:70px 10%;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:35px;
+}
+
+/* About */
+
+.about{
+  text-align:center;
+}
+
+.about img{
+  width:220px;
+  border-radius:50%;
+
+  border:5px solid #00e1ff;
+
+  margin-bottom:20px;
+
+  transition:.5s;
+}
+
+.about img:hover{
+  transform:scale(1.05);
+}
+
+/* Skills */
+
+.skill{
+  margin:10px;
+}
+
+.bar{
+  background:#ddd;
+  border-radius:20px;
+  overflow:hidden;
+
+}
+
+.bar div{
+  padding:8px;
+  color:white;
+}
+
+.html{
+  width:90%;
+  background:#ff5722;
+  animation:grow 2s;
+}
+
+.css{
+  width:85%;
+  background:#2196f3;
+  animation:grow 2s;
+}
+
+.php{
+  width:80%;
+  background:#673ab7;
+  animation:grow 2s;
+}
+
+/* Projects */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+
+  text-align:center;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* Timeline */
+
+.timeline{
+  text-align:center;
+}
+
+.time{
+  background:white;
+
+  margin:20px auto;
+  padding:20px;
+
+  border-left:5px solid #00e1ff;
+
+  width:70%;
+
+  border-radius:10px;
+
+  box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+/* Contact */
+
+form{
+  width:70%;
+  margin:auto;
+
+  display:flex;
+  flex-direction:column;
+}
+
+form input,
+form textarea{
+  margin:10px 0;
+  padding:12px;
+
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+
+form button{
+  padding:12px;
+
+  background:#00e1ff;
+  border:none;
+
+  border-radius:30px;
+
+  cursor:pointer;
+
+  transition:.4s;
+}
+
+form button:hover{
+  background:#00bcd4;
+}
+
+/* Footer */
+
+footer{
+  background:#111;
+  color:white;
+
+  text-align:center;
+  padding:20px;
+}
+
+/* Animations */
+
+@keyframes fade{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@keyframes up{
+  from{
+    transform:translateY(50px);
+    opacity:0;
+  }
+
+  to{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+
+@keyframes type{
+  from{width:0;}
+  to{width:100%;}
+}
+
+@keyframes grow{
+  from{width:0;}
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+  }
+
+  nav ul{
+    margin-top:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero h1{
+    font-size:35px;
+  }
+
+  .time,
+  form{
+    width:100%;
+  }
+}

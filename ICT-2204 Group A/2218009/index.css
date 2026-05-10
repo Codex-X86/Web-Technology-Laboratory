@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to right, #0f172a, #1e1b4b);
+    color: #18aa13;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: linear-gradient(135deg, #4c1d95, #0ea5e9);
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* NAVBAR */
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #22d3ee;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.section h1, .section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    min-width: 160px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: rgba(34, 211, 238, 0.15);
+}
+
+/* FACULTY */
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    background: rgba(255, 255, 255, 0.06);
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.profile:hover {
+    transform: translateY(-10px);
+    border: 1px solid #22d3ee;
+}
+
+/* ✅ FIXED IMAGE ISSUE */
+.profile img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #22d3ee;
+}
+
+/* TABLE */
+table {
+    margin: auto;
+    width: 85%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    color: #e5e7eb;
+}
+
+th {
+    background: #4c1d95;
+    color: white;
+    padding: 14px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* NEWS */
+.news-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background: rgba(255, 255, 255, 0.06);
+    width: 240px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+    border: 1px solid #0ea5e9;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #0b1020;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-col h3 {
+    color: #22d3ee;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .stats, .grid, .news-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        width: 95%;
+    }
+}

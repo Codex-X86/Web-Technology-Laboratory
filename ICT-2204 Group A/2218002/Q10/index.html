@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>StreetFood BD</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <i class="fa-solid fa-bowl-food"></i>
+      StreetFood BD
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search foods...">
+      <button id="searchBtn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+      <h1>Popular Bangladeshi Street Foods</h1>
+
+      <p>
+        Discover delicious Bangladeshi snacks, sweets and drinks
+        with authentic recipes.
+      </p>
+
+      <a href="#foodSection" class="hero-btn">
+        Explore Foods
+      </a>
+    </div>
+
+  </section>
+
+  <!-- FILTER BUTTONS -->
+  <section class="filter-section">
+
+    <button class="filter-btn active" data-category="all">
+      All
+    </button>
+
+    <button class="filter-btn" data-category="snacks">
+      Snacks
+    </button>
+
+    <button class="filter-btn" data-category="sweets">
+      Sweets
+    </button>
+
+    <button class="filter-btn" data-category="drinks">
+      Drinks
+    </button>
+
+  </section>
+
+  <!-- FOOD SECTION -->
+  <section class="food-section" id="foodSection">
+
+    <!-- ================= SNACKS CARD ================= -->
+    <div class="category-box food-category" data-category="snacks">
+
+      <div class="category-title">
+        <i class="fa-solid fa-burger"></i>
+        <h2>Snacks</h2>
+      </div>
+
+      <div class="food-grid">
+
+        <!-- FUCHKA -->
+        <div class="food-card" data-name="fuchka">
+
+          <img src="fuchka.jpg">
+
+          <div class="food-info">
+
+            <h3>Fuchka</h3>
+
+            <p class="price">৳ 40 - 80</p>
+
+            <div class="stars">
+              ★★★★☆
+            </div>
+
+            <div class="recipe">
+
+              <p class="time">
+                <i class="fa-regular fa-clock"></i>
+                Prep Time: 20 mins
+              </p>
+
+              <h4>Ingredients</h4>
+
+              <ul>
+                <li>Fuchka shells</li>
+                <li>Mashed potatoes</li>
+                <li>Chickpeas</li>
+                <li>Tamarind water</li>
+                <li>Spices</li>
+              </ul>
+
+              <h4>Instructions</h4>
+
+              <ol>
+                <li>Mix potatoes and chickpeas.</li>
+                <li>Add spices.</li>
+                <li>Fill shells.</li>
+                <li>Serve with tamarind water.</li>
+              </ol>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- JHALMURI -->
+        <div class="food-card" data-name="jhalmuri">
+
+          <img src="jhalmuri.jpg">
+
+          <div class="food-info">
+
+            <h3>JhalMuri</h3>
+
+            <p class="price">৳ 10 - 30</p>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <div class="recipe">
+
+              <p class="time">
+                <i class="fa-regular fa-clock"></i>
+                Prep Time: 10 mins
+              </p>
+
+              <h4>Ingredients</h4>
+
+              <ul>
+                <li>Puffed rice</li>
+                <li>Mustard oil</li>
+                <li>Onions</li>
+                <li>Green chili</li>
+                <li>Chanachur</li>
+              </ul>
+
+              <h4>Instructions</h4>
+
+              <ol>
+                <li>Mix all ingredients.</li>
+                <li>Add mustard oil.</li>
+                <li>Stir well.</li>
+                <li>Serve crunchy.</li>
+              </ol>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CHOTPOTI -->
+        <div class="food-card" data-name="chotpoti">
+
+          <img src="chotpoti.jpg">
+
+          <div class="food-info">
+
+            <h3>Chotpoti</h3>
+
+            <p class="price">৳ 30 - 150</p>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <div class="recipe">
+
+              <p class="time">
+                <i class="fa-regular fa-clock"></i>
+                Prep Time: 35 mins
+              </p>
+
+              <h4>Ingredients</h4>
+
+              <ul>
+                <li>Yellow peas</li>
+                <li>Boiled eggs</li>
+                <li>Tamarind sauce</li>
+                <li>Onions</li>
+                <li>Spices</li>
+              </ul>
+
+              <h4>Instructions</h4>
+
+              <ol>
+                <li>Cook peas until soft.</li>
+                <li>Add spices and sauce.</li>
+                <li>Top with onions.</li>
+                <li>Serve hot.</li>
+              </ol>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ================= SWEETS CARD ================= -->
+    <div class="category-box food-category" data-category="sweets">
+
+      <div class="category-title">
+        <i class="fa-solid fa-cake-candles"></i>
+        <h2>Sweets</h2>
+      </div>
+
+      <div class="food-grid">
+
+        <!-- JILAPI -->
+        <div class="food-card" data-name="jilapi">
+
+          <img src="jilapi.jpg">
+
+          <div class="food-info">
+
+            <h3>Jilapi</h3>
+
+            <p class="price">৳ 10 - 20</p>
+
+            <div class="stars">★★★★☆</div>
+
+            <div class="recipe">
+
+              <p class="time">
+                <i class="fa-regular fa-clock"></i>
+                Prep Time: 35 mins
+              </p>
+
+              <h4>Ingredients</h4>
+
+              <ul>
+                <li>All-purpose flour</li>
+                <li>Yogurt</li>
+                <li>Baking soda</li>
+                <li>Sugar syrup</li>
+                <li>Oil for frying</li>
+            </ul>
+
+              <h4>Instructions</h4>
+
+              <ol>
+                <li>Mix flour, yogurt, and baking soda into a batter.</li>
+                <li>Pour batter into hot oil in spiral shapes.</li>
+                <li>Fry until golden brown.</li>
+                <li>Dip into sugar syrup and serve warm.</li>
+            </ol>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CHOMCHOM -->
+        <div class="food-card" data-name="chomchom">
+
+          <img src="chomchom.jpg">
+
+          <div class="food-info">
+
+            <h3>Chomchom</h3>
+
+            <p class="price">৳ 30 - 50</p>
+
+            <div class="stars">★★★★☆</div>
+
+            <div class="recipe">
+
+              <p class="time">
+                <i class="fa-regular fa-clock"></i>
+                Prep Time: 35 mins
+              </p>
+
+              <h4>Ingredients</h4>
+
+              <ul>
+                <li>Milk powder</li>
+                <li>Flour</li>
+                <li>Sugar syrup</li>
+                <li>Cardamom</li>
+                <li>Grated coconut</li>
+            </ul>
+
+              <h4>Instructions</h4>
+
+              <ol>
+                <li>Prepare dough using milk powder and flour.</li>
+                <li>Shape into oval balls and fry lightly.</li>
+                <li>Boil in sugar syrup with cardamom.</li>
+                <li>Coat with grated coconut before serving.</li>
+            </ol>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ROSHMALAI -->
+        <div class="food-card" data-name="roshmalai">
+
+          <img src="roshmalai.jpg">
+
+          <div class="food-info">
+
+            <h3>Roshmalai</h3>
+
+            <p class="price">৳ 30 - 100</p>
+
+            <div class="stars">★★★★★</div>
+
+            <div class="recipe">
+
+              <p class="time">
+                <i class="fa-regular fa-clock"></i>
+                Prep Time: 35 mins
+              </p>
+
+              <h4>Ingredients</h4>
+
+              <ul>
+                <li>Milk</li>
+                <li>Chana balls</li>
+                <li>Sugar</li>
+                <li>Cardamom</li>
+                <li>Pistachios</li>
+            </ul>
+
+              <h4>Instructions</h4>
+
+              <ol>
+                <li>Boil milk until slightly thick.</li>
+                <li>Add sugar and cardamom.</li>
+                <li>Place chana balls into the milk.</li>
+                <li>Garnish with pistachios and chill before serving.</li>
+            </ol>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ================= DRINKS CARD ================= -->
+    <div class="category-box food-category" data-category="drinks">
+
+      <div class="category-title">
+        <i class="fa-solid fa-glass-water"></i>
+        <h2>Drinks</h2>
+      </div>
+
+      <div class="food-grid">
+
+        <!-- LEBUR SORBOT -->
+        <div class="food-card" data-name="lebur sorbot">
+
+          <img src="lebu.jpg">
+
+          <div class="food-info">
+
+            <h3>Lebur Sorbot</h3>
+
+            <p class="price">৳ 10 - 20</p>
+
+            <div class="stars">★★★★☆</div>
+
+            <div class="recipe">
+
+              <p class="time">
+                <i class="fa-regular fa-clock"></i>
+                Prep Time: 35 mins
+              </p>
+
+              <h4>Ingredients</h4>
+
+              <ul>
+                <li>Lemon juice</li>
+                <li>Cold water</li>
+                <li>Sugar</li>
+                <li>Black salt</li>
+                <li>Ice cubes</li>
+            </ul>
+
+              <h4>Instructions</h4>
+
+              <ol>
+                <li>Mix lemon juice, sugar, and black salt.</li>
+                <li>Add cold water and stir well.</li>
+                <li>Add ice cubes.</li>
+                <li>Serve chilled.</li>
+            </ol>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- AKHER SORBOT -->
+        <div class="food-card" data-name="akher sorbot">
+
+          <img src="akh.jpg">
+
+          <div class="food-info">
+
+            <h3>Akher Sorbot</h3>
+
+            <p class="price">৳ 20 - 30</p>
+
+            <div class="stars">★★★★☆</div>
+
+            <div class="recipe">
+
+              <p class="time">
+                <i class="fa-regular fa-clock"></i>
+                Prep Time: 35 mins
+              </p>
+
+              <h4>Ingredients</h4>
+
+              <ul>
+                <li>Sugarcane juice</li>
+                <li>Lemon juice</li>
+                <li>Black salt</li>
+                <li>Mint leaves</li>
+                <li>Ice cubes</li>
+            </ul>
+
+              <h4>Instructions</h4>
+
+              <ol>
+                <li>Pour fresh sugarcane juice into a glass.</li>
+                <li>Add lemon juice and black salt.</li>
+                <li>Mix well with mint leaves.</li>
+                <li>Serve cold with ice cubes.</li>
+            </ol>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- LASSI -->
+<div class="food-card" data-name="lassi">
+
+  <img src="lassi.jpg" alt="Lassi">
+
+  <div class="food-info">
+
+    <h3>Lassi</h3>
+
+    <p class="price">৳ 30 - 120</p>
+
+    <div class="stars">★★★★★</div>
+
+    <div class="recipe">
+
+      <p class="time">
+        <i class="fa-regular fa-clock"></i>
+        Prep Time: 10 mins
+      </p>
+
+      <h4>Ingredients</h4>
+
+      <ul>
+        <li>Yogurt</li>
+        <li>Cold water or milk</li>
+        <li>Sugar</li>
+        <li>Ice cubes</li>
+        <li>Cardamom powder</li>
+      </ul>
+
+      <h4>Instructions</h4>
+
+      <ol>
+        <li>Add yogurt, sugar, and milk into a blender.</li>
+        <li>Blend until smooth and creamy.</li>
+        <li>Add ice cubes and cardamom powder.</li>
+        <li>Pour into a glass and serve chilled.</li>
+      </ol>
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Miad Hossain Rafi | Roll: 2218002</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#0d0d0d;
+  color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+  width:100%;
+  padding:20px 8%;
+
+  /* Glass effect */
+  background:rgba(18, 18, 18, 0.55);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  border-bottom:1px solid rgba(255,255,255,0.08);
+
+  /* subtle depth */
+  box-shadow:0 6px 25px rgba(0,0,0,0.35);
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  color:#ff9800;
+}
+
+.logo i{
+  margin-right:8px;
+}
+
+/* SEARCH */
+
+.search-box{
+  display:flex;
+  width:350px;
+}
+
+.search-box input{
+  width:100%;
+  padding:12px;
+  border:none;
+  outline:none;
+  background:#1e1e1e;
+  color:white;
+  border-radius:10px 0 0 10px;
+}
+
+.search-box button{
+  padding:12px 18px;
+  border:none;
+  cursor:pointer;
+  background:#ff9800;
+  color:white;
+  border-radius:0 10px 10px 0;
+  transition:0.3s;
+}
+
+.search-box button:hover{
+  background:#ff5722;
+}
+
+/* HERO */
+
+.hero{
+  height:85vh;
+  background:
+  linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7)),
+  url('hero.jpg');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-content{
+  width:80%;
+}
+
+.hero-content h1{
+  font-size:60px;
+  color:#ff9800;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.hero-btn{
+  text-decoration:none;
+  background:#ff9800;
+  color:white;
+  padding:14px 28px;
+  border-radius:30px;
+  transition:0.3s;
+}
+
+.hero-btn:hover{
+  background:#ff5722;
+  transform:scale(1.05);
+}
+
+/* FILTER BUTTONS */
+
+.filter-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  padding:40px 20px;
+  flex-wrap:wrap;
+}
+
+.filter-btn{
+  padding:12px 24px;
+  border:none;
+  border-radius:30px;
+  background:#1f1f1f;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+  font-size:16px;
+}
+
+.filter-btn:hover{
+  background:#ff9800;
+}
+
+.filter-btn.active{
+  background:#ff9800;
+  box-shadow:0 0 20px rgba(255,152,0,.5);
+}
+
+/* FOOD SECTION */
+
+.food-section{
+  width:90%;
+  margin:auto;
+  padding-bottom:50px;
+}
+
+/* CATEGORY FLEXBOX CARD */
+
+.category-box{
+  background:#161616;
+  padding:30px;
+  border-radius:25px;
+  margin-bottom:50px;
+  box-shadow:0 5px 20px rgba(0,0,0,.4);
+  transition:0.4s;
+}
+
+.category-box:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 30px rgba(255,152,0,.2);
+}
+
+.category-title{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:30px;
+}
+
+.category-title i{
+  color:#ff9800;
+  font-size:32px;
+}
+
+.category-title h2{
+  font-size:38px;
+  color:#ff9800;
+}
+
+/* FOOD GRID */
+
+.food-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  justify-content:center;
+}
+
+/* FOOD CARD */
+
+.food-card{
+  width:340px;
+  background:#1f1f1f;
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.4s;
+  box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.food-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 10px 25px rgba(255,152,0,.3);
+}
+
+.food-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  transition:0.4s;
+}
+
+.food-card:hover img{
+  transform:scale(1.08);
+}
+
+.food-info{
+  padding:20px;
+}
+
+.food-info h3{
+  color:#ff9800;
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.price{
+  color:#ccc;
+  margin-bottom:12px;
+}
+
+.stars{
+  color:gold;
+  font-size:20px;
+  margin-bottom:20px;
+}
+
+/* RECIPE */
+
+.recipe h4{
+  color:#ffb74d;
+  margin:15px 0 10px;
+}
+
+.recipe ul,
+.recipe ol{
+  padding-left:20px;
+}
+
+.recipe li{
+  margin-bottom:8px;
+}
+
+.time{
+  color:#ff9800;
+  margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#111;
+  text-align:center;
+  padding:25px;
+  border-top:1px solid #222;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .search-box{
+    width:100%;
+  }
+
+  .hero-content h1{
+    font-size:38px;
+  }
+
+  .hero-content p{
+    font-size:16px;
+  }
+
+  .food-card{
+    width:100%;
+  }
+
+}
+
+.highlight{
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+
+  from{
+    box-shadow: 0 0 10px #ff9800;
+  }
+
+  to{
+    box-shadow: 0 0 30px #ff5722;
+  }
+
+}
